@@ -1,22 +1,15 @@
 export const binToDec = (input) => {
-
-  let verificacao = Number(input)
-
-  if (verificacao != input) {
-    return "Digite um número Válido"
-  }
-  let bin = []
-  let dividendo = input
-  let quociente = Math.floor(dividendo / 2)
-
-  do {
-      bin.unshift(dividendo % 2)
-      quociente = Math.floor(dividendo/ 2)
-      dividendo = quociente
-  } while (quociente > 0);
-
-  //bin.unshift(1)
-  let result = bin.join('')
   
-  return result
+  if (parseInt(input) = NaN) {
+   return console.log("Deu Ruim kkk")
+  }
+  return numberConverter(input)
+}
+
+
+const numberConverter = (input) => {
+  let number = parseInt(input)
+  let output = number.toString(2)
+  
+  return output
 }
