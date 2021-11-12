@@ -1,8 +1,6 @@
 export const binToDec = (input) => {
   
-  if (parseInt(input) = NaN) {
-   return console.log("Deu Ruim kkk")
-  }
+  
   return numberConverter(input)
 }
 
